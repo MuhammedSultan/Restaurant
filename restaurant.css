@@ -1,0 +1,974 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+.navigation{
+  color: #fff;
+}
+#section-a{
+    background: rgba(0,0,0,.5);
+    background-image: url(https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGNoZWZzJTIwa2l0Y2hlbnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=800&q=60);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    padding-bottom: 7rem;
+}
+.navbar{
+    flex: 1 1 0%;
+    
+}
+#logo{
+    padding: 0.5rem;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+#logo-img{
+    height: 5rem;
+    width: 5rem;
+    margin-left: 6rem;
+}
+#navbar-row{
+    width: 100%;   
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    /*Come BACK*/
+}
+.navbar-options{
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));    
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar-options :hover{
+    color: #ffa31a;
+}
+#Nav-BOB{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    /* Big Orange Button */
+}
+.big-orange-button{
+    border-radius: 0.375rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    border-width: 2px;
+    border: 2px solid rgba(245, 158, 11);
+    background-color: transparent;
+}
+.big-orange-button:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+#section-a-texts{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+#section-a-welcome{
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#section-a-lipsum{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 4rem;
+    margin-bottom: 2.5rem;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* End of Section A */
+
+/* Beginning of section B */
+#section-b{
+    margin-top: 10rem;
+}
+#section-b-grid-container{
+    grid-template-columns: 50% 20% 30%;
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+#inner-section-b{
+    margin-bottom: 10rem;
+}
+#section-b-heading{
+    color: black;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500;
+    margin-left: 6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#section-b-caption{
+    font-weight: 100;
+    line-height: 1.5rem;
+    font-size: 16px;
+    margin-left: 6rem;
+    margin-top: 2.5rem;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+.svg-rows{   
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 700px;
+}
+.caption-icon img{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 6rem; 
+}
+.caption-text{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: 6rem;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#chef{
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+#section-c{
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+    text-align: center;
+}
+#section-c #foodGallery ul{
+    display: flex;
+    margin-bottom: 10px;
+   justify-content: center;
+}
+#section-c #foodGallery ul li{
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#section-c #foodGallery ul li.active{
+    background: #FF6F33;
+    color: #fff;
+}
+#section-c #foodGallery-heading{
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#section-c #foodGallery ul li{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#section-d{
+    margin-top: 10rem;
+}
+#section-d-container{
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+#inner-section-d img{
+    margin-bottom: 10rem;
+    margin-left: 9rem;
+    max-width: 100%;
+    height: auto;
+}
+#second-about-section{
+    margin-left: 7rem;
+    text-align: left;
+    display: block;
+}
+#second-about-section-h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+}
+#second-about-section-p1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    position: relative;
+    bottom: 120px;
+    left: 25px;
+}
+#second-about-section-p2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    position: relative;
+    bottom: 50px;
+    left: 25px;
+}
+#big-orange-button-SD{
+    border-radius: 0.375rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: lightgray;
+    margin-left: 24px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    border-width: 2px;
+    border: 2px solid rgba(245, 158, 11);
+    background-color: transparent;
+}
+#big-orange-button-SD:hover{
+    background-color: rgba(245, 158, 11);
+    color: white;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .itemBox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#section-e{
+    padding-bottom: 10rem;
+}
+.services-row{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-left: 11rem;
+}
+.services-row .card{
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    padding-bottom: 100px;
+    background: #fdfeff;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255,255,255,1);
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.1);
+}
+.services-row .card:hover{
+    box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5),
+    inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.services-row .card .card-image img{
+    max-width: 120px;
+    margin-left: 4.1rem;
+}
+.services-row .card .card-content{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+.services-row .card .card-content h2{
+    color: black;
+    font-weight: 800;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.services-row .card .card-content p{
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*    Footer    */
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    padding-bottom: 400px;
+    background: rgba(0,0,0,0.6)url("https://images.unsplash.com/photo-1558030077-82dd9347c407?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c3RlYWslMjBmaXJlfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+.inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+    
+}
+.inner_footer .logo_container img{
+    width: 65px;
+    height: auto;
+}
+.inner_footer .footer_third{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+}
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.inner_footer .footer_third a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+.inner_footer .footer_third span{
+    color: white;
+    font-family: 'arial';
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+#copyright{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.inner_footer .footer_third .credits{
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media screen and (max-width:768px){
+    #logo{
+        width: 10px;
+        position: relative;
+        right: 40px;
+    }
+    #Nav-BOB{
+        display: none;
+    }
+    #section-a-welcome{
+        padding-top: 80px;
+    }
+    #section-a-lipsum{
+        font-size: 13px;
+    }
+    #section-b-grid-container{
+        grid-template-columns: 100%;
+        display: grid;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    #chef{
+        position: relative;
+        margin-bottom: 0px;
+        bottom: 100px;
+        left: 20px;
+    }
+    #foodGallery-heading{
+        position: relative;
+        right: 250px;
+        bottom: 150px;
+    }
+    #food-options{
+        position: relative;
+        right: 250px;
+        bottom: 150px;
+    }
+    .product .itemBox{
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        position: relative;
+        left: 40px;
+        bottom: 150px;
+    }
+    .product .itemBox #first-4{
+        grid-template-columns: 25%;
+    }
+    .product .itemBox #second-4{
+        grid-template-columns: 25%;
+    }
+    .product .itemBox #third-4{
+        grid-template-columns: 25%;
+    }
+    .product .itemBox #fourth-4{
+        grid-template-columns: 25%;
+    }
+   
+    #inner-section-d img{
+        position: relative;
+        bottom: 175px;
+    }
+    #second-about-section-h2{
+        position: relative;
+        bottom: 270px;
+        font-size: 36px;
+    }
+    #second-about-section-p1{
+        display: none;
+    }
+    #second-about-section-p2{
+        font-size: 14px;
+        position: relative;
+        bottom: 250px;
+    }
+    #big-orange-button-SD{
+        position: relative;
+        bottom: 220px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    #section-e{
+        padding-bottom: 0px;
+    }
+    .services-row{
+        width: 500px;
+        position: relative;
+        bottom: 200px;
+        right: 20px;
+    }
+    .logo_container img{
+        position: relative;
+        left: 40px;
+    }
+    .footer_third{
+        position: relative;
+        right: 300px;
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:425px){
+    #logo{
+        width: 8px;
+        position: relative;
+        right: 40px;
+    }
+    #Nav-BOB{
+        display: none;
+    }
+    #section-a-welcome{
+        padding-top: 80px;
+        font-size: 28px;
+    }
+    #section-a-lipsum{
+        font-size: 8px;
+    }
+    #section-b-grid-container{
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        position: relative;
+    }
+    #section-b-heading{
+        position: relative;
+        right: 30px;
+    }
+    #section-b-caption{
+        position: relative;
+        right: 30px;
+    }
+    .svg-rows{
+        width: 400px;
+        position: relative;
+        right: 30px;
+    }
+    #chef{  
+        width: 25rem;
+        position: relative;
+        left: -40px;
+    }
+    #foodGallery-heading{
+        position: relative;
+        right: 420px;
+        bottom: 150px;
+        font-size: 36px !important;
+    }
+    #food-options{
+        position: relative;
+        right: 430px;
+        bottom: 150px;
+        font-size: 10px;
+    }
+    .product .itemBox{
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+        position: relative;
+        left: -15px;
+        bottom: 150px;
+    }
+    .product .itemBox #first-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #second-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #third-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #fourth-4{
+        grid-template-columns: 100% !important;
+    }
+    #secion-d-container{
+        grid-template-columns: 100%;
+    }
+    #inner-section-d img{
+        position: relative;
+        width: 20rem;
+        bottom: 270px;
+        right: 90px;
+    }
+    #second-about-section-h2{
+        position: relative;
+        bottom: 270px;
+        font-size: 12px;
+        left: -40px;
+        text-align: center;
+    }
+    #second-about-section-p1{
+        display: none;
+    }
+    #second-about-section-p2{
+        font-size: 10px;
+        position: relative;
+        bottom: 250px;
+        left: -40px;
+        text-align: center;
+    }
+    #big-orange-button-SD{
+        position: relative;
+        right: 317px;
+        bottom: 320px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    #section-e{
+        padding-bottom: 0px;
+    }
+    .services-row{
+        width: 500px;
+        position: relative;
+        bottom: 200px;
+        right: 220px;
+    }
+    .logo_container img{
+        position: relative;
+        left: 0px;
+    }
+    .footer_third{
+        position: relative;
+        left: 45px;
+        bottom: 100px;
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:375px){
+    #logo{
+        width: 8px;
+        position: relative;
+        right: 40px;
+    }
+    #Nav-BOB{
+        display: none;
+    }
+    #section-a-welcome{
+        padding-top: 80px;
+        font-size: 28px;
+        position: relative;
+        right: 35px;
+    }
+    #section-a-lipsum{
+        font-size: 12px;
+        position: relative;
+        right: 30px;
+    }
+    #section-a-bob{
+        position: relative;
+        right: 30px;
+    }
+    #section-b-grid-container{
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        position: relative;
+    }
+    #section-b-heading{
+        position: relative;
+        right: 30px;
+    }
+    #section-b-caption{
+        position: relative;
+        right: 30px;
+    }
+    .svg-rows{
+        width: 400px;
+        position: relative;
+        right: 50px;
+    }
+    #chef{  
+        width: 25rem;
+        position: relative;
+        left: -55px;
+    }
+    #foodGallery-heading{
+        position: relative;
+        right: 450px;
+        bottom: 150px;
+        font-size: 34px !important;
+    }
+    #food-options{
+        position: relative;
+        right: 450px;
+        bottom: 150px;
+        font-size: 9px;
+    }
+    .product .itemBox{
+        width: 90px;
+        height: 100px;
+        margin: 2px;
+        position: relative;
+        left: -20px;
+        bottom: 150px;
+    }
+    .product .itemBox #first-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #second-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #third-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #fourth-4{
+        grid-template-columns: 100% !important;
+    }
+    #secion-d-container{
+        grid-template-columns: 100%;
+    }
+    #inner-section-d img{
+        position: relative;
+        width: 400px;
+        height: 350px;
+        bottom: 270px;
+        right: 90px;
+    }
+    #second-about-section-h2{
+        position: relative;
+        bottom: 270px;
+        font-size: 16px;
+        left: -40px;
+    }
+    #second-about-section-p1{
+        display: none;
+    }
+    #second-about-section-p2{
+        position: relative;
+        font-size: 10px;
+        bottom: 250px;
+        left: -40px;    
+    }
+    #big-orange-button-SD{  
+        position: relative;
+        right: 300px;
+        bottom: 350px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    #section-e{
+        padding-bottom: 0px;
+    }
+    .services-row{
+        width: 500px;
+        position: relative;
+        bottom: 200px;
+        right: 240px;
+    }
+    .logo_container img{
+        position: relative;
+        left: -10px;
+    }
+    .footer_third{
+        position: relative;
+        left: 20px;
+        bottom: 100px;
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:320px){
+    #logo{
+        width: 8px;
+        position: relative;
+        right: 80px;
+    }
+    #Nav-BOB{
+        display: none;
+    }
+    #section-a-welcome{
+        padding-top: 80px;
+        font-size: 28px;
+        position: relative;
+        right: 35px;
+    }
+    #section-a-lipsum{
+        font-size: 12px;
+        position: relative;
+        right: 30px;
+    }
+    #section-a-bob{
+        position: relative;
+        right: 30px;
+    }
+    #section-b-grid-container{
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        position: relative;
+    }
+    #section-b-heading{
+        position: relative;
+        text-align: left;
+        right: 50px;
+    }
+    #section-b-caption{
+        position: relative;
+        text-align: left;
+        right: 50px;
+    }
+    .svg-rows{
+        width: 400px;
+        position: relative;
+        right: 80px;
+    }
+    #chef{  
+        width: 20rem;
+        position: relative;
+        left: -48px;
+    }
+    #foodGallery-heading{
+        position: relative;
+        right: 480px;
+        bottom: 150px;
+        font-size: 30px !important;
+    }
+    #section-c #foodGallery ul li{
+       margin: 1px;
+    }
+    #food-options{
+        position: relative;
+        right: 480px;
+        bottom: 150px;
+        font-size: 7.5px;
+    }
+    .product .itemBox{
+        width: 75px;
+        height: 100px;
+        margin: 2.5px;
+        position: relative;
+        left: -20px;
+        bottom: 150px;
+    }
+    .product .itemBox #first-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #second-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #third-4{
+        grid-template-columns: 100% !important;
+    }
+    .product .itemBox #fourth-4{
+        grid-template-columns: 100% !important;
+    }
+    #secion-d-container{
+        grid-template-columns: 100%;
+    }
+    #inner-section-d img{
+        position: relative;
+        width: 320px;
+        height: 350px;
+        bottom: 170px;
+        right: 70px;
+    }
+    #second-about-section-h2{
+        position: relative;
+        text-align: center;
+        bottom: 270px;
+        font-size: 18px;
+        left: -40px;
+    }
+    #second-about-section-p1{
+        display: none;
+    }
+    #second-about-section-p2{
+        position: relative;
+        font-size: 11px;
+        bottom: 240px;
+        left: -40px;   
+        text-align: center; 
+        display: none;
+    }
+    #big-orange-button-SD{  
+        position: relative;
+        right: 100px;
+        bottom: 186px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    #section-e{
+        padding-bottom: 0px;
+    }
+    .services-row{
+        width: 500px;
+        position: relative;
+        bottom: 200px;
+        right: 265px;
+    }
+    .logo_container img{
+        position: relative;
+        left: -10px;
+    }
+    .footer_third{
+        position: relative;
+        left: 20px;
+        bottom: 100px;
+        padding-left: 40px;
+    }
+}
+/* Responsive Navbar */
+@media(max-width:500px){
+    .label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
+/* Responsive Footer */
+@media(max-width: 600px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
